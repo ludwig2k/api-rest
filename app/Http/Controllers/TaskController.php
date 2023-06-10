@@ -70,6 +70,8 @@ class TaskController extends Controller
 
             $task->delete();
 
+            return response()->json(['message' => 'Task deleted successfully'], 204);
+            
             return response()->json(null, 204);
         } catch (ModelNotFoundException $e) {
             return response()->json(['error' => 'Task not found'], 404);

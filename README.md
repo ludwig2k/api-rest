@@ -23,10 +23,7 @@ Rename the .env.example file to .env and update the database configuration.
 Run the database migrations:
 
 php artisan migrate
-Generate an application key:
 
-
-php artisan key:generate
 Start the development server:
 
 php artisan serve

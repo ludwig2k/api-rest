@@ -2,15 +2,6 @@
 
 This is an API project that provides endpoints for managing tasks.
 
-## Table of Contents
-
--[Getting Started](#getting-started)
--[Prerequisites](#prerequisites)
--[Installation](#installation)
-- [Usage](#usage)
-- [API Documentation](#api-documentation)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 

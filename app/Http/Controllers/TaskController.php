@@ -10,11 +10,15 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 class TaskController extends Controller
 {
     public function index()
-    {
-        $tasks = Task::all();
+{
+    $tasks = Task::all();
 
-        return response()->json($tasks);
+    if ($tasks->isEmpty()) {
+        return response()->json(['message' => 'No tasks found.'], 404);
     }
+
+    return response()->json($tasks);
+}
 
     public function store(Request $request)
     {
